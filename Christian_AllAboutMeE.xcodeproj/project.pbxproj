@@ -13,6 +13,9 @@
 		2F9566A4262F019700556541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9566A2262F019700556541 /* Main.storyboard */; };
 		2F9566A6262F019A00556541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F9566A5262F019A00556541 /* Assets.xcassets */; };
 		2F9566A9262F019A00556541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F9566A7262F019A00556541 /* LaunchScreen.storyboard */; };
+		2F9566B2262F0B9C00556541 /* AbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9566B1262F0B9C00556541 /* AbleViewController.swift */; };
+		2F9566B5262F0BD700556541 /* AubreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9566B4262F0BD700556541 /* AubreyViewController.swift */; };
+		2F9566B8262F0BF300556541 /* BillieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9566B7262F0BF300556541 /* BillieViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2F9566A5262F019A00556541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F9566A8262F019A00556541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F9566AA262F019A00556541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F9566B1262F0B9C00556541 /* AbleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbleViewController.swift; sourceTree = "<group>"; };
+		2F9566B4262F0BD700556541 /* AubreyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AubreyViewController.swift; sourceTree = "<group>"; };
+		2F9566B7262F0BF300556541 /* BillieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillieViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				2F95669E262F019700556541 /* SceneDelegate.swift */,
 				2F9566A0262F019700556541 /* ViewController.swift */,
 				2F9566A2262F019700556541 /* Main.storyboard */,
+				2F9566B7262F0BF300556541 /* BillieViewController.swift */,
+				2F9566B4262F0BD700556541 /* AubreyViewController.swift */,
+				2F9566B1262F0B9C00556541 /* AbleViewController.swift */,
 				2F9566A5262F019A00556541 /* Assets.xcassets */,
 				2F9566A7262F019A00556541 /* LaunchScreen.storyboard */,
 				2F9566AA262F019A00556541 /* Info.plist */,
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F9566A1262F019700556541 /* ViewController.swift in Sources */,
+				2F9566B8262F0BF300556541 /* BillieViewController.swift in Sources */,
 				2F95669D262F019700556541 /* AppDelegate.swift in Sources */,
+				2F9566B5262F0BD700556541 /* AubreyViewController.swift in Sources */,
+				2F9566B2262F0B9C00556541 /* AbleViewController.swift in Sources */,
 				2F95669F262F019700556541 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
