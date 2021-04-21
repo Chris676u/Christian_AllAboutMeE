@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--ChrisMB-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Christian_AllAboutMeE" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,28 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ChrisMB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-6E-thb">
-                                <rect key="frame" x="97" y="455" width="194" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-D0-gCl">
-                                <rect key="frame" x="74" y="279" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="-500" translatesAutoresizingMaskIntoConstraints="NO" id="dAQ-I7-gIN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-04-21 at 3.38.36 PM" translatesAutoresizingMaskIntoConstraints="NO" id="qi8-D0-gCl">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="575"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="575" id="S8l-qj-XHt"/>
+                                            <constraint firstAttribute="width" constant="414" id="wnA-Rp-9AU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oun-6E-thb">
+                                        <rect key="frame" x="0.0" y="643.5" width="414" height="119.5"/>
+                                        <string key="text">My name is Christian Severin, I am an 18 year old senior. My favorite color is red. Here are my favorite artist along side my favorite albums! ENJOY:)</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHg-Hm-Ort">
+                                        <rect key="frame" x="186.5" y="831.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dAQ-I7-gIN" secondAttribute="bottom" id="Yum-7b-jdo"/>
+                            <constraint firstItem="dAQ-I7-gIN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aEE-kl-gEo"/>
+                            <constraint firstAttribute="trailing" secondItem="dAQ-I7-gIN" secondAttribute="trailing" id="pFf-b5-UfI"/>
+                            <constraint firstItem="dAQ-I7-gIN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sHe-c2-6NB"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Mwr-R4-55k"/>
+                    <tabBarItem key="tabBarItem" title="ChrisMB" image="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" id="Mwr-R4-55k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="94"/>
+            <point key="canvasLocation" x="776.81159420289862" y="93.75"/>
         </scene>
-        <!--Item-->
+        <!--Abel's Albums-->
         <scene sceneID="2dO-5j-leT">
             <objects>
                 <viewController id="b5p-qm-yyM" customClass="AbleViewController" customModule="Christian_AllAboutMeE" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,93 +66,182 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-04-20 at 8.40.28 AM" translatesAutoresizingMaskIntoConstraints="NO" id="aV6-Ld-UKp">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="-500" translatesAutoresizingMaskIntoConstraints="NO" id="mD5-jG-8PI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-04-20 at 8.40.28 AM" translatesAutoresizingMaskIntoConstraints="NO" id="aV6-Ld-UKp">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="575"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="575" id="4RH-pw-GfD"/>
+                                            <constraint firstAttribute="width" constant="414" id="iSZ-Tk-Y31"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Abel's Albums&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAT-Od-Rzw">
+                                        <rect key="frame" x="102.5" y="670.5" width="209" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXk-rn-kPY">
+                                        <rect key="frame" x="182" y="802" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xab-u0-xPw">
+                                <rect key="frame" x="0.0" y="-6" width="414" height="908"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAT-Od-Rzw">
-                                <rect key="frame" x="110" y="520" width="194" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbN-cj-t34">
-                                <rect key="frame" x="191" y="652" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="750"/>
+                                <state key="normal" title="                                 "/>
+                                <connections>
+                                    <action selector="AbelNextButton:" destination="b5p-qm-yyM" eventType="touchUpInside" id="ED8-cR-Q35"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mJH-Oo-mBR"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mD5-jG-8PI" secondAttribute="bottom" id="0qh-d1-EhR"/>
+                            <constraint firstItem="mD5-jG-8PI" firstAttribute="leading" secondItem="zkj-Au-sfe" secondAttribute="leading" id="cVt-vv-lfo"/>
+                            <constraint firstAttribute="trailing" secondItem="mD5-jG-8PI" secondAttribute="trailing" id="nGR-la-wGg"/>
+                            <constraint firstItem="mD5-jG-8PI" firstAttribute="top" secondItem="mJH-Oo-mBR" secondAttribute="top" constant="0.10000000000000001" id="qe9-48-vWp"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="j7X-gn-lnQ"/>
+                    <tabBarItem key="tabBarItem" title="Abel's Albums" image="pencil.tip.crop.circle.badge.plus" catalog="system" id="j7X-gn-lnQ"/>
                     <connections>
                         <outlet property="AbelImageView" destination="aV6-Ld-UKp" id="od4-uZ-ZQB"/>
-                        <outlet property="AbelTxt" destination="jAT-Od-Rzw" id="gUC-Lj-4Mv"/>
+                        <outlet property="AbelTxt" destination="jAT-Od-Rzw" id="imk-LL-lNC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nF-M0-MNH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="-451"/>
+            <point key="canvasLocation" x="1496" y="94"/>
         </scene>
-        <!--Item-->
+        <!--Aubrey's Albums-->
         <scene sceneID="7nQ-62-uXz">
             <objects>
-                <viewController id="xc5-gN-yaH" sceneMemberID="viewController">
+                <viewController id="xc5-gN-yaH" customClass="AubreyViewController" customModule="Christian_AllAboutMeE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BXg-xl-Ffo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-04-20 at 8.42.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="u3V-bX-vqz">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="-500" translatesAutoresizingMaskIntoConstraints="NO" id="WWN-7j-EBQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-04-20 at 8.42.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="u3V-bX-vqz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="575"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="n1w-dq-iz4"/>
+                                            <constraint firstAttribute="height" constant="575" id="yMr-FC-Y9i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Aubrey's Albums&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqn-ei-DPv">
+                                        <rect key="frame" x="86.5" y="670.5" width="241.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMD-aW-2Eg">
+                                        <rect key="frame" x="182" y="802" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poE-sX-0cy">
+                                <rect key="frame" x="0.0" y="21" width="414" height="821"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aubrey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqn-ei-DPv">
-                                <rect key="frame" x="98" y="508" width="194" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title=" "/>
+                                <connections>
+                                    <action selector="AubreyNextButton:" destination="xc5-gN-yaH" eventType="touchUpInside" id="Eh2-qo-Jw5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yMs-dl-7F0"/>
-                        <color key="backgroundColor" red="1" green="0.57647002326224817" blue="0.9563136120531277" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WWN-7j-EBQ" firstAttribute="top" secondItem="yMs-dl-7F0" secondAttribute="top" id="7IG-3j-am7"/>
+                            <constraint firstAttribute="bottom" secondItem="WWN-7j-EBQ" secondAttribute="bottom" id="Qqx-mx-Ggg"/>
+                            <constraint firstItem="WWN-7j-EBQ" firstAttribute="leading" secondItem="BXg-xl-Ffo" secondAttribute="leading" id="bHB-bF-qP3"/>
+                            <constraint firstItem="yMs-dl-7F0" firstAttribute="trailing" secondItem="WWN-7j-EBQ" secondAttribute="trailing" id="sGn-xP-RgF"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PzS-cd-Wpc"/>
+                    <tabBarItem key="tabBarItem" title="Aubrey's Albums" image="pencil.tip.crop.circle" catalog="system" id="PzS-cd-Wpc"/>
+                    <connections>
+                        <outlet property="AubreyImageView" destination="u3V-bX-vqz" id="VXb-fS-vPe"/>
+                        <outlet property="AubreyTxt" destination="fqn-ei-DPv" id="uh7-xS-hM6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVF-jx-eQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="830"/>
+            <point key="canvasLocation" x="2221.739130434783" y="93.75"/>
         </scene>
-        <!--Item-->
+        <!--Billie's Albums-->
         <scene sceneID="hZT-7m-Nzz">
             <objects>
-                <viewController id="7L1-fD-m1R" sceneMemberID="viewController">
+                <viewController id="7L1-fD-m1R" customClass="BillieViewController" customModule="Christian_AllAboutMeE" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y0y-cv-UmW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2021-04-20 at 8.44.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-Il-f9Y">
-                                <rect key="frame" x="93" y="384" width="240" height="128"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A5Q-a8-a9u">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-04-20 at 8.44.10 AM" translatesAutoresizingMaskIntoConstraints="NO" id="fd8-Il-f9Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="575"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="B25-Xm-afx"/>
+                                            <constraint firstAttribute="height" constant="575" id="QCw-be-b6n"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Billie's Albums&quot;" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-sQ-wC1">
+                                        <rect key="frame" x="101" y="685.5" width="212.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TG6-jF-9d0">
+                                        <rect key="frame" x="186.5" y="831.5" width="41.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyJ-it-DRX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Billie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-sQ-wC1">
-                                <rect key="frame" x="110" y="505" width="194" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <connections>
+                                    <action selector="BillieNextButton:" destination="7L1-fD-m1R" eventType="touchUpInside" id="bgl-oI-zfu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E3W-oV-0wL"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="A5Q-a8-a9u" secondAttribute="trailing" id="1EV-r2-hjS"/>
+                            <constraint firstItem="A5Q-a8-a9u" firstAttribute="top" secondItem="E3W-oV-0wL" secondAttribute="top" id="GfP-u7-gm8"/>
+                            <constraint firstAttribute="bottom" secondItem="A5Q-a8-a9u" secondAttribute="bottom" id="mVB-eH-foR"/>
+                            <constraint firstItem="A5Q-a8-a9u" firstAttribute="leading" secondItem="E3W-oV-0wL" secondAttribute="leading" id="yUh-Ge-2a1"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="4QM-7W-rmE"/>
+                    <tabBarItem key="tabBarItem" title="Billie's Albums" image="pencil.tip.crop.circle.badge.arrow.forward" catalog="system" id="4QM-7W-rmE"/>
+                    <connections>
+                        <outlet property="BillieImageView" destination="fd8-Il-f9Y" id="8kx-7e-x2x"/>
+                        <outlet property="BillieTxt" destination="KZ8-sQ-wC1" id="QTA-OZ-IfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kcg-gI-N0z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184" y="607"/>
+            <point key="canvasLocation" x="2995.6521739130435" y="93.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dmN-mM-Ooa">
@@ -139,6 +249,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tuv-nv-3Lk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BhZ-qa-8Ay">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -158,14 +269,13 @@
         <image name="Screen Shot 2021-04-20 at 8.40.28 AM" width="837" height="887"/>
         <image name="Screen Shot 2021-04-20 at 8.42.10 AM" width="457" height="606"/>
         <image name="Screen Shot 2021-04-20 at 8.44.10 AM" width="983" height="948"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="Screen Shot 2021-04-21 at 3.38.36 PM" width="869" height="1048"/>
+        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.tip.crop.circle.badge.arrow.forward" catalog="system" width="128" height="108"/>
+        <image name="pencil.tip.crop.circle.badge.plus" catalog="system" width="128" height="108"/>
+        <image name="rectangle.and.pencil.and.ellipsis.rtl" catalog="system" width="128" height="92"/>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

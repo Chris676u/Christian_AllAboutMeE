@@ -16,8 +16,29 @@ class AbleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    var abelImages: [UIImage] = [#imageLiteral(resourceName: "Screen Shot 2021-04-20 at 8.52.46 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.28.11 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.28.49 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.29.54 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.30.30 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.31.46 AM")]
-    var abelTxt: [String] = ["Abel's Albums", "Trilogy", "KissLand", "Beauty Behind The Madness", "StarBoy", "My Dear Meloncholy", "AfterHours"]
+    
+    var position = 0
+    
+    @IBAction func AbelNextButton(_ sender: UIButton) {
+       
+        
+        let AbelImage: [UIImage] = [#imageLiteral(resourceName: "Screen Shot 2021-04-20 at 8.52.46 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.28.11 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.28.49 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.29.54 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.30.30 AM"), #imageLiteral(resourceName: "Screen Shot 2021-04-20 at 9.31.46 AM")]
+        
+        let AbelWords: [String] = ["Trilogy", "KissLand", "Beauty Behind The Madness", "StarBoy", "My Dear Meloncholy", "AfterHours"]
+        if position < AbelImage.count{
+            
+            AbelTxt.text = AbelWords[position]
+            AbelImageView.image = AbelImage [position]
+            position += 1
+        }
+        else{
+            position = 0
+            AbelTxt.text = AbelWords[position]
+            AbelImageView.image = AbelImage [position]
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
